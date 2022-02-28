@@ -29,7 +29,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={THEME}>
-      <StatusBar style="light" />
+      <StatusBar style="light" translucent backgroundColor="transparent" />
       <Home />
     </ThemeProvider>
   );
