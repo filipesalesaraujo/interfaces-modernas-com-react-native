@@ -1,15 +1,19 @@
+
 import React from "react";
-import { Home } from "./src/components/screens/Home";
-import { ThemeProvider } from "styled-components/native";
-import AppLoading from "expo-app-loading";
+
 import {
   useFonts,
   Roboto_400Regular,
   Roboto_500Medium,
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto";
+import AppLoading from "expo-app-loading";
 
-import THEME from "./src/components/themes";
+import { ThemeProvider } from "styled-components/native";
+
+import THEME from "./src/theme";
+
+import { Home } from "./src/components/screens/Home";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -24,7 +28,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={THEME}>
-      <Home />;
+      <Home />
     </ThemeProvider>
   );
 }

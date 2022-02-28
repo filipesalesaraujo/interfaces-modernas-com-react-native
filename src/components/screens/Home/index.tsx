@@ -1,11 +1,13 @@
 import React from "react";
 
-import { Container } from "./styles";
+import { Container, Header } from "./styles";
+
+import coverImg from "../../../assets/cover.png";
 
 export function Home() {
   return (
     <Container>
-      <Header />
+      <Header source={coverImg} />
     </Container>
   );
 }
