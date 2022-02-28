@@ -1,7 +1,8 @@
 import styled from "styled-components/native";
 import { RFPercentage } from "react-native-responsive-fontsize";
+import * as Animatable from "react-native-animatable";
 
-export const Container = styled.View`
+export const Container = styled(Animatable.View)`
   align-items: center;
   width: 180px;
   height: 250px;
@@ -10,7 +11,7 @@ export const Container = styled.View`
   border-radius: 10px;
 `;
 
-export const Image = styled.Image`
+export const Image = styled(Animatable.Image)`
   margin-top: -50px;
   width: 150px;
   height: 150px;
